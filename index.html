@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resonant Frequency Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="resonantFrequencyRadio" name="variables" checked>
+  <label for="resonantFrequencyRadio">Resonant Frequency</label>
+
+  <input type="radio" id="inductanceRadio" name="variables">
+  <label for="inductanceRadio">Inductance</label>
+
+  <input type="radio" id="capacitanceRadio" name="variables">
+  <label for="capacitanceRadio">Capacitance</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(L) Inductance (Henry)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(C) Capacitance (Farad)</label>
+  <input type="number" id="v2"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
